@@ -1,0 +1,259 @@
+.minified-nav {
+    aside {
+      width: $asideWidthMini;
+      // transform: none; // 27.12
+    }
+  
+    .user-container:before {
+      width: 25px;
+      height: 25px;
+      top: 23px;
+      left: 16px;
+    }
+  
+    &.jm-no-touch .drag-target {
+      z-index: -1;
+    }
+  
+    li.language > div > a {
+      background-color: #2196f3 !important;
+    }
+  
+    .collapsible-body li > .divider {
+      display: none;
+    }
+  
+    .collapsible-body > ul > li > a {
+      width: 200px;
+    }
+  
+    .collapsible-header {
+      // padding: 0px;
+  
+      > a {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+  
+      > a > span {
+        top: -7px;
+        left: -10px;
+      }
+    }
+  
+    .sidenav {
+      overflow: visible !important; // otherwise animations get clipped !
+  
+      li > a:hover {
+        background-color: white;
+      }
+  
+      #profile-dropdown li:not(.divider) > a:hover {
+        background-color: inherit;
+      }
+  
+      .collapsible-header > a:hover {
+        opacity: 1;
+      }
+    }
+  
+    #sidenav-trigger {
+      padding-left: 5px;
+    }
+  
+    .social-icons {
+      flex-direction: column;
+    }
+  
+    .content-page {
+      padding-left: $asideWidthMini;
+      
+        transition: padding-left 0.3s ease-in-out;
+    }
+  
+    .sidenav-header {
+      flex-direction: column;
+  
+      &:before {
+        width: 60px;
+      }
+      .dropdown-content {
+        overflow: visible;
+        width: 140px;
+      }
+    }
+  
+    div.collapsible-body > ul > li > a > i {
+      margin-right: 10px;
+    }
+  
+    #mobile-navbar {
+      // fix for languages flyout under aside not above
+      position: relative;
+      height: 100%;
+  
+      .sidenav-footer {
+        padding-bottom: 10px;
+      }
+  
+      .sidenav li.active {
+        background-color: rgba(0, 0, 0, 0);
+      }
+  
+      > li:hover:nth-child(n + 2):nth-child(-n + #{$licount})
+        > div.collapsible-header {
+        display: block;
+      }
+  
+      > li:hover:nth-child(n + 2):nth-child(-n + #{$licount})
+        > div.collapsible-header
+        > a
+        > span {
+        display: inline-block;
+        position: relative;
+      }
+  
+      > li:not(.sidenav-header)
+        > .collapsible-body
+        > ul
+        > li:not(.divider)
+        > a
+        > span:nth-child(1) {
+        display: inline-block;
+      }
+  
+      > li:hover:not(.sidenav-header)
+        > .collapsible-body
+        > ul
+        > li:not(.divider)
+        > a
+        > i:nth-child(1) {
+        display: inline-block;
+        //  padding-right: ;
+      }
+  
+      > li:not(.sidenav-header) > a {
+        width: 60px;
+      }
+  
+      > li:not(.sidenav-header):nth-child(n + 2):nth-child(-n + #{$licount}) a {
+        // sub-menu going back in
+        // transition: all 0s ease-out; // 27.12
+        width: 60px;
+        display: block;
+      }
+  
+      > li:not(.sidenav-header):hover:nth-child(n + 2):nth-child(-n + #{$licount})
+        a {
+        width: 263px;
+        white-space: nowrap;
+        background-color: white;
+        transition: width 0.3s ease; // sub-menu going out
+      }
+  
+      > li:not(.sidenav-header):hover:nth-child(n + 2):nth-child(-n + #{$licount})
+        > div
+        > a:nth-child(1) {
+        border-top-right-radius: 4px;
+      }
+  
+      // > li > div.collapsible-body > ul > li:nth-last-child(2) > a{
+      //   border-bottom-right-radius: 4px;
+      // }
+  
+      li {
+        position: relative;
+      }
+  
+      > li {
+        padding-left: 0px;
+      }
+  
+      i.opener {
+        display: none;
+      }
+  
+      > li:not(.sidenav-header):hover:nth-child(n + 2):nth-child(-n + #{$licount})
+        > .collapsible-body
+        > ul
+        > li
+        > a {
+        width: 200px;
+      }
+  
+      /* ##############################################  sidebar - navigation:  second level sub-menu fly-out animation    */
+  
+      > li > div.collapsible-body {
+        display: block;
+        position: absolute;
+        width: 0px;
+        opacity: 0;
+        left: -60px;
+        transition: all 0.2s ease-out; // submenu-content -> UL
+      }
+  
+      > li:hover > div.collapsible-body {
+        display: block;
+        height: auto;
+        position: absolute;
+        top: 48px;
+        left: 63px;
+        background: none;
+        width: 200px;
+        opacity: 1;
+      }
+    } // mobile-navbar-end
+  
+    li.sidenav-footer > div {
+      position: relative;
+      left: -5px;
+    }
+  
+    div.social-icons > div.col.s2 {
+      line-height: 40px;
+    }
+  
+    .sidenav-header {
+      padding: 0px;
+      margin: 0px;
+      width: 60px;
+      // height: 125px; 27.12
+      // height: 10.7692rem; 
+      #aJM {
+        top: unset;
+        left: 2px;
+      }
+      img.user {
+        top: 15px;
+        left: 11px;
+        width: 35px;
+      }
+    }
+  
+    li.sidenav-footer div.social-icons > div.col.s2:nth-child(1n) {
+      margin-right: 3px;
+    }
+  
+    .nav-wrapper {
+      padding-left: 13px;
+    }
+  
+    .simplebar-mask {
+      > div > div > div > li > ul > li.active > a {
+        border-color: transparent;
+      }
+  
+      > li:hover > a {
+        width: 260px;
+        background: #26c6da;
+        color: #fff;
+        border-color: #009efb;
+      }
+  
+      > div > div > div > li > ul > li > a {
+        padding: 9px 15px;
+        width: 50px;
+      }
+    } // end .simplebar-mask
+  } // end .minified-nav
+  

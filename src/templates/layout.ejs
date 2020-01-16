@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="custom-theme">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <script>
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('p-cache.js') // register the serviceWorker: p-cache.js /service-worker
+        //             .then(reg => console.log('Service Worker: Registered (Pages)'))
+        //             .catch(err => console.log("Service Worker: Error:" + err));
+        //     });
+        // }
+    </script>
+    <meta name="theme-color" content="#26C6DA" />
+    <link rel="apple-touch-icon" href="${require('../icons/icon.png').default}">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <%=header%>
+        </header>
+        <aside>
+            <%=navbar%>
+        </aside>
+        <div class="content-page">
+            <main>
+                <%=body%>
+            </main>
+        </div>
+    </div>
+   <%=settings%>
+</body>
+
+</html>

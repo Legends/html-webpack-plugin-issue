@@ -1,0 +1,24 @@
+// LOAD REMOTE FONTS/CSS
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+
+// FONTAWESOME VERSION 5
+// this setup loads all icons 
+
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";  // base import comes first
+ 
+//Include at least one of the below, depending on what icons you want.
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands"; // use --> font-family: 'Font Awesome 5 Brands';
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";    // use --> font-family: 'Font Awesome 5 Free';
+// @import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss"; // to make it work with fa v4 --> i.e.: fa fa-address-book-o
+
+// PRO version:
+// @import url("../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss"); // use --> font-family: 'Font Awesome 5 Free';
+
+
+@import "../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css";
+@import "materialize-custom";

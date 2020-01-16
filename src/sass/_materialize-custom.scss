@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// Alt +z --> rem to px
+// Strg + Shift + P --> Command Palette opnes --> cdnjs
+// Strg + x + ,  --> Settings open --> user + workspace etc.
+
+// Color
+@import "node_modules/materialize-css/sass/components/color-variables";
+@import "node_modules/materialize-css/sass/components/color-classes";
+
+@import "./custom_colors"; // #############################   custom colors
+
+// Variables;
+@import "node_modules/materialize-css/sass/components/variables";
+
+// Reset
+@import "node_modules/materialize-css/sass/components/normalize";
+
+// components
+@import "node_modules/materialize-css/sass/components/global";
+@import "node_modules/materialize-css/sass/components/badges";
+@import "node_modules/materialize-css/sass/components/icons-material-design";
+@import "node_modules/materialize-css/sass/components/grid";
+@import "node_modules/materialize-css/sass/components/navbar";
+@import "node_modules/materialize-css/sass/components/typography";
+@import "node_modules/materialize-css/sass/components/transitions";
+// @import "node_modules/materialize-css/sass/components/cards"; //not used
+// @import "node_modules/materialize-css/sass/components/toast"; //not used
+// @import "node_modules/materialize-css/sass/components/tabs"; //not used
+// @import "node_modules/materialize-css/sass/components/tooltip"; //not used
+@import "node_modules/materialize-css/sass/components/buttons";
+@import "node_modules/materialize-css/sass/components/dropdown";
+@import "node_modules/materialize-css/sass/components/waves";
+// @import "node_modules/materialize-css/sass/components/modal"; //not used
+@import "node_modules/materialize-css/sass/components/collapsible";
+// @import "node_modules/materialize-css/sass/components/chips"; //not used
+// @import "node_modules/materialize-css/sass/components/materialbox"; //not used
+@import "node_modules/materialize-css/sass/components/forms/forms";  
+// @import "node_modules/materialize-css/sass/components/table_of_contents"; //not used
+@import "node_modules/materialize-css/sass/components/sidenav";
+// @import "node_modules/materialize-css/sass/components/preloader"; //not used
+// @import "node_modules/materialize-css/sass/components/slider"; //not used
+// @import "node_modules/materialize-css/sass/components/carousel"; //not used
+// @import "node_modules/materialize-css/sass/components/tapTarget"; //not used
+// @import "node_modules/materialize-css/sass/components/pulse"; //not used
+// @import "node_modules/materialize-css/sass/components/datepicker"; //not used
+// @import "node_modules/materialize-css/sass/components/timepicker"; //not used
